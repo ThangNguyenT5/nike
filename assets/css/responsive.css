@@ -1,0 +1,111 @@
+/* PC *//* > PC low resolution < 1024px & < 1239px*/
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .containerRightDesc {
+        top: 26%;
+        left: -26%;
+    }
+    .productRecent li {
+        /* width: 152px;
+        height: 130px; */
+    }
+    .footerRight {
+        flex-basis: 30%;
+    }
+    .btnShop {
+        margin: 0;
+    }
+}
+/* Mobile & Tablet */
+@media (max-width: 1023px){
+    
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    .headerLeft {
+        margin: 0;
+    }
+    .headerNav {
+        margin: 0;
+    }
+    .containerRightDesc {
+        top: 26%;
+        left: -44%;
+        width: 300px;
+        font-size: 12px;
+    }
+    .containerRightImg {
+        top: -28%;
+        left: -42%;
+    }
+    .footerRight {
+        margin: 0;
+    }
+    .hidden-on-tab {
+        display: none;
+    }
+}
+/* Mobile */
+@media (max-width: 739px) {
+    .main {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .header {
+        margin-left: 8px;
+        margin-right: 8px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .headerLeft {
+        margin-left: 0;
+        flex:0;
+    }
+    .headerNav {
+        display: none;
+        padding: 8px 0;
+        position: absolute;
+        top: 110%;
+        right: 0;
+        text-align: right;
+        margin-right: 8px;
+    }
+    .headerNav li {
+        padding: 4px 0px;
+    }
+    #mobileMenu-btn {
+        display: block;
+    }
+    .container {
+        margin-top: 94px;
+        margin-bottom: 0;
+    }
+    .containerRightDesc {
+        position: absolute;
+        top: 26%;
+        left: 0;
+        width: 300px;
+        font-size: 10px;
+        color: #185955;
+        padding: 4px 0px 16px 26px;
+        background-color: #d9d9d9d9;
+        border-radius: 50px;
+    }
+    .containerRightImg {
+        display: block;
+        position: relative;
+        width: 584px;
+        height: 381px;
+        top: 0;
+        left: -37%;
+    }
+
+    .productRecent li {
+        margin-bottom: 80px;
+    }
+    .hidden-on-mobile {
+        display: none;
+    }
+}

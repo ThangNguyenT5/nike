@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(130deg,var(--color-2),var(--color-3),var(--color-4),var(--color-4));
+    background-repeat: no-repeat;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLeft {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-left: 36px;
+    text-decoration: none;
+}
+
+.headerLeft_heading {
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.headerLeft_logo {
+
+}
+
+.headerNav {
+    display: flex;
+    margin-right: 47px;
+    justify-content: space-around;
+}
+
+.headerNav li {
+    padding: 4px 18px;
+    list-style: none;
+    position: relative;
+}
+
+.headerNav a {
+    font-size: 21px;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+}
+
+.headerNav li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-underline);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.headerNav li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+}
+
+.headerRightInputWarp {
+    background-color: #fff;
+    height: 34px;
+    padding: 0 8px;
+    border-radius: 50px;
+    line-height: 34px;
+    margin-right: 26px;
+}
+
+.headerRightIcon {
+    cursor: pointer;
+    color: var(--color-3);
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+.headerRightInput {
+    width: 128px;
+    height: 34px;
+    border-radius: 50px;
+}
+
+.headerRightCart {
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 22px;
+}
+
+.headerRightCart::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #A8E910;
+}
+
+.container {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.containerLeft {
+    flex: 1;
+    color: #fff;
+}
+
+.containerLeftHeading {
+    font-size: 66px;
+    text-transform: uppercase;
+}
+
+.containerLeftDesc {
+    max-width: 494px;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-top: 18px;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+}
+
+.containerRight {
+    position: relative;
+    flex: 1;
+}
+
+.containerRightDesc {
+    position: absolute;
+    top: 22%;
+    left: -16%;
+    width: 400px;
+    font-size: 18px;
+    color: #185955;
+    padding: 4px 0px 26px 34px;
+    background-color: #d9d9d9d9;
+    border-radius: 50px;
+}
+
+.containerRightImg {
+    position: absolute;
+    left: -36%;
+    top: -22%;
+    width: 150%;
+    height: 150%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(0px 12px 50px rgba(0, 0, 0, 0.8));
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLeft {
+    flex: 1;
+}
+.footerLeft a {
+    margin-top: 100px;
+}
+.footerRight {
+    margin-top: 32px;
+    flex: 1;
+    flex-basis: 10%;
+}
+.productRecent {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.productRecent li {
+    width: 180px;
+    height: 140px;
+    text-align: center;
+    border-radius: 28px;
+    background-image: linear-gradient(#FAFF23, transparent );
+}
+
+.productRecent .productImg {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 16px;
+}
+
+.productRecent a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.productRecent li:hover .productImg {
+    cursor: pointer;
+    transform: translateY(-15%);
+}
+
+.productRecent li:hover a {
+    font-weight: 700;
+    color: #FAFF23;
+}
+
+#mobileMenu-btn {
+    display: none;
+}
+
+.mobileMenu-icon {
+    padding: 8px;
+    font-size: 24px;
+    color: #FAFF23;
+}
